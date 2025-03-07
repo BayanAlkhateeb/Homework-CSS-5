@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Login Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            border-radius: 15px;
+            background: linear-gradient(#d50606, #ffe100);
+            margin: 15px;
+            padding: 15px;
+
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background: #6a0572;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            color: transparent;
+            outline: none;
+            padding: 17px 10px 10px 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px;
+            color: #fff;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-image: url('bg.jpeg');
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="avatar"></div>
+        <h2>Log in</h2>
+        <form action="">
+            <div> <i class="fas fa-user"></i>
+                <input class="inp" type="text" placeholder="User name" required>
+            </div>
+            <div> <i class="fas fa-lock"></i>
+                <input class="inp" type="password" placeholder="Password" required>
+            </div>
+
+            <div><button type="submit">LOGIN</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
